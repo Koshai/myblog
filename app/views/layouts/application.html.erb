@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Myblog</title>
+    <title>Syed Rubayyat Akbar - UX Designer, Front and Backend Developer</title>
+    <script src="https://use.fontawesome.com/5c00394972.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,700" rel="stylesheet">
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,6 +12,13 @@
   </head>
 
   <body>
+    <header id="main_navigation" class="clearfix">
+      <a href="#", class="name">Syed Rubayyat Akbar</a>
+      <nav>
+        <%= link_to "Articles", posts_path %>
+        <a href="#">Projects</a>
+        <a href="#">Contacts</a>
+    </header>
     <%= yield %>
   </body>
 </html>
